@@ -4,7 +4,7 @@ MAINTAINER LLC Itmicus <order@itmicus.ru>
 
 WORKDIR $CATALINA_HOME
 
-ENV CMDBUILD_URL https://sourceforge.net/projects/openmaint/files/2.1/openmaint-2.1-3.3-b.war/download
+ENV CMDBUILD_URL https://sourceforge.net/projects/openmaint/files/2.1/openmaint-2.2-3.3.2-w.war/download
 ENV POSTGRES_USER postgres
 ENV POSTGRES_PASS postgres
 ENV POSTGRES_PORT 5432
@@ -31,7 +31,7 @@ RUN set -x \
 	&& groupadd tomcat \
 	&& useradd -s /bin/false -g tomcat -d $CATALINA_HOME tomcat \
 	&& cd /tmp \
-	&& wget -O cmdbuild.war "$CMDBUILD_URL" \
+	&& wget --no-check-certificate -O cmdbuild.war "$CMDBUILD_URL" \
 	&& chmod 777 cmdbuild.war \
 	&& chmod 777 /usr/local/bin/docker-entrypoint.sh \
 	&& unzip cmdbuild.war -d cmdbuild \
