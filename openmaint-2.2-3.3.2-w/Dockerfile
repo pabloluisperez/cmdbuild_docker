@@ -4,10 +4,6 @@ MAINTAINER LLC Itmicus <order@itmicus.ru>
 
 WORKDIR $CATALINA_HOME
 
-
-#ENV CMDBUILD_URL /home/faelterman/Downloads/openmaint-2.2-3.3.2-w.war
-#ENV CMDBUILD_URL https://downloads.sourceforge.net/project/openmaint/2.2/openmaint-2.2-3.3.2-w.war?ts=gAAAAABh03PqC-yxgY2axYvRlJQavqry8ljO-dEo8UaYvp0OYyRtReTCmApK__M4-OfpzYH36SBKtVJH3_j9WlWogB9FIITDJA%3D%3D&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fopenmaint%2Ffiles%2F2.2%2Fopenmaint-2.2-3.3.2-w.war%2Fdownload
-#ENV CMDBUILD_URL https://sourceforge.net/projects/openmaint/files/2.1/openmaint-2.2-3.3.2-w.war/download
 ENV CMDBUILD_URL=https://sourceforge.net/projects/openmaint/files/2.2/openmaint-2.2-3.3.2-w.war/download
 ENV POSTGRES_USER postgres
 ENV POSTGRES_PASS postgres
