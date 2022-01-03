@@ -19,7 +19,7 @@ services:
         # mem_reservation: 300m
 
     openmaint_app:
-        image: itmicus/cmdbuild:om-2.1-3.3-b
+        image: faelterman/openmaint:2.2
         container_name: openmaint_app
         links:
            - openmaint_db
